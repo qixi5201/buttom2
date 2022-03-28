@@ -18,7 +18,13 @@ class AppBody extends StatelessWidget {
       elevation: 8,
       padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
-      onPressed: () => _showSnackBar('你按下按鈕'),
+      onPressed: () =>Fluttertoast.showToast(
+          msg: '你按下SnackBar',
+          toastLength: Toast.LENGTH_LONG,
+          gravity: ToastGravity.TOP,
+          backgroundColor: Colors.grey,
+          textColor: Colors.indigo,
+          fontSize: 20.0),
     );
 
     final btn2 = FlatButton(
@@ -30,7 +36,13 @@ class AppBody extends StatelessWidget {
       textColor: Colors.white,
       padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
-      onPressed: () => _showSnackBar('你按下按鈕'),
+      onPressed: () => Fluttertoast.showToast(
+          msg: '你按下SnackBar',
+          toastLength: Toast.LENGTH_LONG,
+          gravity: ToastGravity.TOP,
+          backgroundColor: Colors.grey,
+          textColor: Colors.indigo,
+          fontSize: 20.0),
     );
 
     final btn3 = OutlineButton(
@@ -46,7 +58,13 @@ class AppBody extends StatelessWidget {
       ),
       padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
-      onPressed: () => _showSnackBar('你按下按鈕'),
+      onPressed: () => Fluttertoast.showToast(
+          msg: '你按下SnackBar',
+          toastLength: Toast.LENGTH_LONG,
+          gravity: ToastGravity.TOP,
+          backgroundColor: Colors.grey,
+          textColor: Colors.indigo,
+          fontSize: 20.0),
     );
 
     final btn4 = IconButton(
@@ -111,9 +129,9 @@ class AppBody extends StatelessWidget {
         onPressed: () => Fluttertoast.showToast(
             msg: '你按下SnackBar',
             toastLength: Toast.LENGTH_LONG,
-            gravity: ToastGravity.CENTER,
-            backgroundColor: Colors.blue,
-            textColor: Colors.white,
+            gravity: ToastGravity.TOP,
+            backgroundColor: Colors.grey,
+            textColor: Colors.indigo,
             fontSize: 20.0),
       ),
     );
